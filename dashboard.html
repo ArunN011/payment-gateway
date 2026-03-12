@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stackly Checkout</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+<img src="Adobe Express - file.png">
+</a>
+
+
+<button class="navbar-toggler bg-white" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div class="collapse navbar-collapse" id="navMenu">
+
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item dropdown">
+
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+Home
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="index.html">Home 1</a></li>
+
+<li><a class="dropdown-item" href="home.html">Home 2</a></li>
+
+</ul>
+
+</li>
+<li class="nav-item">
+<a class="nav-link" href="feature.html">Features</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="dashboard.html">Dashboard</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="contact.html">Contact</a>
+</li>
+
+<li class="nav-item dropdown ms-3">
+
+<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+
+<i class="bi bi-person-circle profile-icon"></i>
+
+</a>
+
+<ul class="dropdown-menu dropdown-menu-end">
+
+<li>
+<a class="dropdown-item" href="login.html">
+<i class="bi bi-box-arrow-in-right"></i> Login
+</a>
+</li>
+
+<li>
+<a class="dropdown-item" href="signup.html">
+<i class="bi bi-person-plus"></i>Register
+</a>
+</li>
+
+</ul>
+
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+<section class="checkout-section">
+<div class="checkout">
+
+<div class="header">Stackly Checkout</div>
+
+<div class="progress-wrapper">
+
+<div class="progress-bg"></div>
+<div class="progress-line" id="progressLine"></div>
+
+<div class="steps">
+
+<div class="step active" id="stepIcon1">1</div>
+<div class="step" id="stepIcon2">2</div>
+<div class="step" id="stepIcon3">3</div>
+
+</div>
+
+</div>
+<div id="methodStep">
+
+<h4>Select Payment Method</h4>
+
+<div class="method" onclick="openUPI()">
+<img src="upi.webp"> UPI
+</div>
+
+<div class="method" onclick="openCard()">
+<img src="mastercard.webp"> Credit / Debit Card
+</div>
+
+<div class="method" onclick="openBank()">
+<img src="mobile-bank.webp"> Net Banking
+</div>
+
+</div>
+<div id="upiStep" class="hide">
+
+<h4>Select UPI App</h4>
+
+<div class="upi-apps">
+<img src="Phonepe Square App Logo.webp" onclick="goPin()">
+<img src="gpay.webp" onclick="goPin()">
+<img src="paythm.webp" onclick="goPin()">
+<img src="bhim.webp" onclick="goPin()">
+</div>
+
+<input class="input" value="rahul@okaxis">
+
+<button class="btn" onclick="goPin()">Continue</button>
+
+</div>
+
+
+<div id="cardStep" class="hide">
+
+<h4>Enter Card Details</h4>
+
+<input id="cardNumber" class="input" placeholder="Card Number">
+
+<input id="cardDate" class="input" placeholder="MM / YY">
+
+<input id="cardCVV" class="input" placeholder="CVV">
+
+<button class="btn" onclick="validateCard()">Pay ₹2,499</button>
+
+</div>
+
+<div id="bankStep" class="hide">
+
+<h4>Select Bank</h4>
+
+<div class="method" onclick="completePayment()">HDFC Bank</div>
+<div class="method" onclick="completePayment()">ICICI Bank</div>
+<div class="method" onclick="completePayment()">SBI Bank</div>
+
+</div>
+
+
+<div id="pinStep" class="hide">
+
+<h4>Enter UPI PIN</h4>
+
+<input id="pin" class="input" readonly>
+
+<div class="keypad">
+
+<div class="key" onclick="addPin(1)">1</div>
+<div class="key" onclick="addPin(2)">2</div>
+<div class="key" onclick="addPin(3)">3</div>
+
+<div class="key" onclick="addPin(4)">4</div>
+<div class="key" onclick="addPin(5)">5</div>
+<div class="key" onclick="addPin(6)">6</div>
+
+<div class="key" onclick="addPin(7)">7</div>
+<div class="key" onclick="addPin(8)">8</div>
+<div class="key" onclick="addPin(9)">9</div>
+
+<div class="key" onclick="backPin()">⌫</div>
+<div class="key" onclick="addPin(0)">0</div>
+<div class="key" onclick="completePayment()">✓</div>
+
+</div>
+
+</div>
+
+
+<div id="successStep" class="hide success">
+
+<div class="success-circle">✓</div>
+
+<h3>Payment Successful</h3>
+
+<p>₹2,499 paid to Stackly India</p>
+
+<div class="receipt" id="receiptBox"></div>
+
+<button class="btn" onclick="goHome()">Done</button>
+
+</div>
+
+</div>
+<br></section>
+
+<footer class="footer">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4 col-md-6 footer-logo">
+
+<img src="Adobe Express - file.png" class="footer-img">
+
+<p class="footer-text">
+Secure and reliable payment gateway for businesses worldwide.
+</p>
+
+<div class="social-icons">
+
+<a href="error.html"><i class="bi bi-facebook"></i></a>
+<a href="error.html"><i class="bi bi-twitter"></i></a>
+<a href="error.html"><i class="bi bi-instagram"></i></a>
+<a href="error.html"><i class="bi bi-linkedin"></i></a>
+
+</div>
+
+</div>
+
+<div class="col-lg-2 col-md-6">
+
+<h5>Company</h5>
+
+<ul class="footer-links">
+<li><a href="error.html">About</a></li>
+<li><a href="error.html">Features</a></li>
+<li><a href="error.html">Pricing</a></li>
+<li><a href="error.html">Blog</a></li>
+</ul>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<h5>Services</h5>
+
+<ul class="footer-links">
+<li><a href="error.html">UPI Payments</a></li>
+<li><a href="error.html">Card Payments</a></li>
+<li><a href="error.html">Wallet Payments</a></li>
+<li><a href="error.html">Payment API</a></li>
+</ul>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<h5>Contact</h5>
+
+<ul class="footer-links">
+<li>Email: support@stackly.com</li>
+<li>Phone: +91 9876543210</li>
+<li>Location: India</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<hr>
+
+<p class="copyright">
+&copy; 2026 Stackly. All rights reserved.
+</p>
+
+</div>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+function updateStep(step){
+
+document.querySelectorAll(".step").forEach((s,i)=>{
+s.classList.remove("active")
+
+if(i < step){
+s.classList.add("active")
+}
+
+})
+
+let width = ((step-1)/2)*100
+document.getElementById("progressLine").style.width = width + "%"
+
+}
+function updateStep(step){
+// document.getElementById("stepIcon1").classList.remove("active")
+// document.getElementById("stepIcon2").classList.remove("active")
+// document.getElementById("stepIcon3").classList.remove("active")
+
+document.getElementById("stepIcon"+step).classList.add("active")
+}
+
+function hideAll(){
+document.getElementById("methodStep").classList.add("hide")
+document.getElementById("upiStep").classList.add("hide")
+document.getElementById("cardStep").classList.add("hide")
+document.getElementById("bankStep").classList.add("hide")
+document.getElementById("pinStep").classList.add("hide")
+}
+
+function openUPI(){
+hideAll()
+updateStep(2)
+document.getElementById("upiStep").classList.remove("hide")
+document.getElementById("stepIcon2").classList.add("active")
+}
+
+function openCard(){
+hideAll()
+updateStep(2)
+document.getElementById("cardStep").classList.remove("hide")
+}
+
+function openBank(){
+hideAll()
+updateStep(2)
+document.getElementById("bankStep").classList.remove("hide")
+}
+
+function goPin(){
+hideAll()
+updateStep(3)
+document.getElementById("pinStep").classList.remove("hide")
+
+}
+
+function addPin(n){
+let pin=document.getElementById("pin")
+if(pin.value.length<4){
+pin.value+=n
+}
+}
+
+function backPin(){
+let pin=document.getElementById("pin")
+pin.value=pin.value.slice(0,-1)
+}
+
+function validateCard(){
+
+let number=document.getElementById("cardNumber").value
+let date=document.getElementById("cardDate").value
+let cvv=document.getElementById("cardCVV").value
+
+if(number=="" || date=="" || cvv==""){
+alert("Enter card details")
+return
+}
+
+completePayment()
+
+}
+
+function completePayment(){
+  let pin=document.getElementById("pin")
+pin.value = pin.value.slice(0,-1)
+}
+
+function completePayment(){
+let pin=document.getElementById("pin").value
+
+if(pin.length !== 4){
+alert("Enter 4 digit UPI PIN")
+return
+}
+
+hideAll()
+
+let txn="TXN"+Math.floor(Math.random()*1000000000)
+
+let now=new Date().toLocaleString()
+
+document.getElementById("receiptBox").innerHTML=
+
+"Transaction ID: "+txn+"<br>"+
+"Date & Time: "+now+"<br>"+
+"Payment Mode: Online Payment"
+
+document.getElementById("successStep").classList.remove("hide")
+document.getElementById("stepIcon3").classList.add("active")
+
+}
+
+function goHome(){
+window.location.href="index.html"
+}
+
+</script>
+
+</body>
+</html>

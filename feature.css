@@ -1,0 +1,415 @@
+body{
+font-family: "Segoe UI", sans-serif;
+background:#f5f7fb;
+
+}
+body,html{
+    overflow-x: hidden;
+}
+
+.navbar{
+background:#4c1d95;
+padding:12px 20px;
+}
+
+.navbar-brand img{
+height:35px;
+filter: brightness(0) invert(1);
+}
+
+.nav-link{
+color:white ;
+font-weight:500;
+margin-right:10px;
+cursor: pointer;
+}
+.navbar .nav-link{
+color:white ;
+}
+
+.nav-link:hover{
+color:#e9d5ff ;
+}
+.navbar .dropdown-toggle.show{
+color:white;
+}
+.navbar .dropdown-toggle{
+color:white ;
+}
+
+.profile-icon{
+font-size:22px;
+color:white;
+cursor:pointer;
+}
+
+.login-btn{
+background:white;
+color:#4c1d95;
+font-weight:600;
+border-radius:6px;
+padding:6px 16px;
+border:none;
+}
+
+.logout-btn{
+background:#ef4444;
+color:white;
+border:none;
+border-radius:6px;
+padding:6px 16px;
+}
+.navbar-toggler{
+border-color:#ffffff;
+}
+.features-section{
+
+padding:120px 0;
+background:#f7f7f7;
+
+}
+
+.features-heading{
+
+font-size:42px;
+font-weight:700;
+margin-bottom:30px;
+
+}
+
+.feature-box{
+
+padding:25px;
+transition:0.4s;
+
+}
+
+.feature-icon{
+
+width:60px;
+height:60px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+border-radius:12px;
+
+background:#f0f0f0;
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+.feature-icon:hover{
+    background: #0a4ed5;
+    cursor: pointer;
+    color: white;
+}
+
+.feature-box.active .feature-icon{
+
+background:#84cc16;
+color:white;
+
+}
+
+.feature-box h5{
+
+font-weight:600;
+margin-bottom:10px;
+
+}
+
+.feature-box p{
+
+color:#6b7280;
+font-size:15px;
+
+}
+
+.feature-box:hover{
+
+transform:translateY(-6px);
+
+}
+
+
+
+.payment-methods{
+
+padding:100px 0;
+background:#f9fafb;
+
+}
+
+.methods-title{
+
+font-size:36px;
+font-weight:700;
+
+}
+
+.methods-subtitle{
+
+color:#6b7280;
+margin-top:10px;
+
+}
+
+.method-box{
+
+padding:20px;
+border-radius:12px;
+background:white;
+height: 150px;
+
+transition:0.3s;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
+
+}
+
+.method-box img{
+
+width:60px;
+margin-bottom:10px;
+
+}
+
+.method-box:hover{
+
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+
+}
+
+.why-stackly{
+
+padding:120px 0;
+background:#020c2a;
+color:white;
+
+}
+
+.why-title{
+
+font-size:42px;
+font-weight:700;
+margin-bottom:20px;
+
+}
+
+.why-text{
+
+color:#9ca3af;
+margin-bottom:30px;
+
+}
+
+.why-list{
+
+display:grid;
+gap:18px;
+
+}
+
+.why-item{
+
+display:flex;
+gap:12px;
+align-items:center;
+font-size:17px;
+
+}
+
+.why-item i{
+
+color:#6366f1;
+font-size:20px;
+
+}
+
+
+.stats-grid{
+ margin-top: 10px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+
+}
+
+.stats-card{
+
+background:#0b1644;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.4s;
+
+}
+
+.stats-card h3{
+
+font-size:32px;
+font-weight:700;
+
+}
+
+.stats-card p{
+
+color:#9ca3af;
+
+}
+
+.stats-card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(99,102,241,0.4);
+
+}
+
+.faq-section{
+padding:120px 0;
+background:#f8fafc;
+}
+
+.faq-tag{
+color:#f97316;
+font-weight:600;
+letter-spacing:1px;
+}
+
+.faq-title{
+font-size:40px;
+font-weight:700;
+margin:15px 0;
+}
+
+.faq-text{
+color:#6b7280;
+}
+
+.accordion-item{
+border:none;
+border-bottom:1px solid #e5e7eb;
+}
+
+.accordion-button{
+font-weight:500;
+}
+
+.accordion-button:focus{
+box-shadow:none;
+}
+.footer{
+
+background:#111827;
+color:white;
+padding:80px 0 30px;
+overflow-x: hidden;
+
+}
+
+.footer-img{
+width:160px;
+margin-bottom:15px;
+filter: brightness(0) invert(1);
+
+}
+
+.footer-text{
+color:#9ca3af;
+margin-bottom:20px;
+}
+
+.social-icons a{
+
+display:inline-flex;
+align-items:center;
+justify-content:center;
+
+width:40px;
+height:40px;
+
+background:#1f2937;
+border-radius:50%;
+
+margin-right:10px;
+color:white;
+
+transition:0.3s;
+
+}
+
+.social-icons a:hover{
+background:#1046c5;
+transform:translateY(-4px);
+}
+
+.footer h5{
+margin-bottom:20px;
+}
+
+.footer-links{
+list-style:none;
+padding:0;
+}
+
+.footer-links li{
+margin-bottom:10px;
+}
+
+.footer-links a{
+color:#9ca3af;
+text-decoration:none;
+}
+
+.footer-links a:hover{
+color:white;
+}
+
+.copyright{
+text-align:center;
+margin-top:20px;
+color:#9ca3af;
+}
+@media(max-width:992px){
+
+.footer-logo{
+margin-bottom:40px;
+}
+
+}
+
+@media(max-width:576px){
+
+.footer{
+text-align:center;
+padding-left:15px;
+padding-right:15px;
+}
+
+.social-icons{
+justify-content:center;
+}
+
+.footer-links{
+margin-bottom:30px;
+}
+
+}
+
+@media(max-width:380px){
+
+.footer-img{
+width:140px;
+
+}
+.footer{
+text-align:center;
+padding-left:15px;
+padding-right:15px;
+}
+
+}

@@ -1,0 +1,582 @@
+body{
+    overflow-x: hidden;
+    margin-top: 80px;
+}
+body,html{
+    overflow-x: hidden;
+}
+
+.navbar{
+background:linear-gradient(90deg,#2c0054,#3b0070);
+padding:14px 0;
+}
+.profile-icon{
+font-size:28px;
+}
+
+.navbar .nav-link{
+color:white ;
+font-weight:600;
+margin-right:15px;
+cursor: pointer;
+font-size: 20px;
+}
+
+.navbar .nav-link:hover{
+color:#66f5c4;
+}
+.navbar .nav-link,
+.navbar .nav-link.dropdown-toggle,
+.navbar .nav-link.dropdown-toggle.show{
+color:white ;
+}
+
+.navbar-brand{
+color:white ;
+font-weight:600;
+font-size:20px;
+}
+
+.navbar-brand img{
+height:32px;
+margin-right:8px;
+filter: brightness(0) invert(1);
+}
+
+.navbar-toggler{
+border:none;
+}
+
+.navbar-toggler-icon{
+filter:invert(1);
+}
+
+
+
+.dropdown-menu{
+background:#2c0054;
+border:none;
+}
+
+.dropdown-item{
+color:white;
+}
+
+.dropdown-item:hover{
+background:#3b0070;
+color:#66f5c4;
+}
+.hero-section{
+background:linear-gradient(90deg,#1e003a,#3b0070);
+padding:120px 0;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+.hero-tag{
+color:#66f5c4;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.hero-text h1{
+font-size:64px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-desc{
+color:#dcdcdc;
+max-width:500px;
+margin-bottom:30px;
+}
+
+.hero-btn{
+background:#66f5c4;
+border:none;
+padding:14px 35px;
+border-radius:30px;
+font-weight:600;
+color:#1e003a;
+transition:0.3s;
+text-decoration: none;
+}
+
+.hero-btn:hover{
+transform:scale(1.05);
+}
+
+
+.hero-image{
+position:relative;
+text-align:center;
+}
+
+.hero-image img{
+border-radius:20px;
+width: 70%;
+
+}
+
+@media (max-width:576px){
+
+.hero-section{
+padding:90px 18px;
+text-align:center;
+}
+
+.hero-text h1{
+font-size:30px;
+line-height:1.2;
+font-weight:700;
+}
+
+
+.hero-tag{
+font-size:14px;
+}
+
+
+.hero-desc{
+font-size:14px;
+line-height:1.6;
+max-width:100%;
+margin-bottom:25px;
+}
+.hero-btn{
+padding:12px 24px;
+font-size:14px;
+border-radius:25px;
+}
+.hero-image{
+margin-top:25px;
+}
+
+.hero-image img{
+width:100%;
+height:50%;
+border-radius:15px;
+}
+
+
+}
+body{ 
+    font-family:Segoe UI; 
+    margin:0; } 
+/* section */ 
+.ecosystem-section{ 
+    background:#f6f6f8;
+     padding:100px 0;
+      text-align:center; 
+    }
+ .top-text{ 
+    color:#66f5c4; 
+    font-weight:600; 
+    margin-bottom:10px;
+ } 
+ .main-title{ 
+    font-size:48px; 
+    font-weight:800; 
+    color:#2b0c4d;
+     margin-bottom:20px;
+     } 
+ .subtitle{
+     max-width:700px; 
+     margin:auto; 
+     color:#555; 
+    }  
+ .eco-card{ 
+    background:white; 
+    padding:40px; 
+    border-radius:20px; 
+    text-align:left; 
+    box-shadow:0 10px 30px rgba(0,0,0,0.05); 
+    height:100%;
+     transition:0.3s;
+     } 
+ .eco-card:hover{
+     transform:translateY(-8px);
+     } 
+ .highlight{ 
+    border:3px solid #a574ff;
+ } 
+  .highlight2{ 
+    border:3px solid #0332db;
+ } 
+  .highlight1{ 
+    border:3px solid #1eec07;
+ } 
+  .icon{ 
+    width:60px;
+     height:60px; 
+     border-radius:50%;
+      display:flex; 
+      align-items:center;
+       justify-content:center;
+        font-size:24px;
+         margin-bottom:20px; 
+        } 
+  .green{
+     background:#c8ffe6; 
+     color:#0a8f66; 
+    }
+   .blue{ 
+    background:#cfefff; 
+    color:#0072ff;
+ } 
+   .purple{ 
+    background:#e6d9ff; 
+    color:#7a36ff; 
+} 
+   .btn-outline-green{ 
+    border:2px solid #0a8f66;
+     padding:8px 18px; 
+     border-radius:30px; 
+     text-decoration:none;
+      color:#0a8f66;
+       font-weight:500; 
+    } 
+   .btn-outline-blue{
+     border:2px solid #0072ff; 
+     padding:8px 18px;
+      border-radius:30px; 
+      text-decoration:none;
+       color:#0072ff;
+     } 
+   .btn-outline-purple{ 
+    border:2px solid #7a36ff; 
+    padding:8px 18px;
+     border-radius:30px; 
+     text-decoration:none; 
+     color:#7a36ff;
+     }
+    .eco-card h4{ 
+        font-weight:700;
+         margin-bottom:15px;
+         }
+     .eco-card p{ 
+        color:#555; 
+        margin-bottom:25px; 
+    } 
+    
+      @media(max-width:768px){
+         .main-title{ 
+            font-size:32px; 
+        } 
+        .eco-card{ 
+            text-align:center; 
+        } 
+        .icon{ 
+            margin:auto;
+             margin-bottom:20px; 
+            }
+         }
+
+.why-nmi{
+background:#1c0037;
+padding:120px 0;
+color:white;
+}
+
+.tag{
+color:#3ee6a5;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.main-title{
+font-size:64px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.description{
+color:#cfcfe7;
+max-width:420px;
+}
+
+.feature-card{
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
+}
+
+.feature-card.show{
+opacity:1;
+transform:translateY(0);
+}
+
+.icon-box{
+width:50px;
+height:50px;
+background:linear-gradient(135deg,#5f2cff,#8f2cff);
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+margin-bottom:15px;
+}
+
+.feature-card h4{
+font-weight:700;
+margin-bottom:10px;
+}
+
+.feature-card p{
+color:#cfcfe7;
+font-size:15px;
+}
+
+@media(max-width:992px){
+
+.main-title{
+font-size:46px;
+}
+
+}
+
+.spotlight-section{
+padding:100px 0;
+color:white;
+}
+
+.top-tag{
+color:#3ee6a5;
+font-weight:600;
+}
+
+.spotlight-title{
+font-size:60px;
+font-weight:800;
+}
+
+.success-btn{
+border:2px solid #3ee6a5;
+background:none;
+color:#3ee6a5;
+padding:10px 22px;
+border-radius:30px;
+margin-bottom:20px;
+text-decoration: none;
+}
+
+.slider-nav button{
+width:45px;
+height:45px;
+border-radius:50%;
+border:none;
+background:#3a1a63;
+color:white;
+margin-left:10px;
+font-size:18px;
+}
+
+.slider-wrapper{
+overflow:hidden;
+}
+
+.card-slider{
+display:flex;
+gap:30px;
+overflow-x:auto;
+scroll-behavior:smooth;
+}
+
+.card-slider::-webkit-scrollbar{
+display:none;
+}
+
+.success-card{
+min-width:350px;
+height:320px; 
+background:#2a0a4a;
+padding:30px;
+border-radius:20px;
+display:flex;
+flex-direction:column;
+}
+
+.dark-card{
+background:#3c1b66;
+}
+
+.success-card h2{
+font-size:70px;
+font-weight:800;
+}
+
+.brand{
+letter-spacing:2px;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:18px;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+.profile{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.avatar{
+width:40px;
+height:40px;
+background:#999;
+border-radius:50%;
+}
+
+.readmore{
+color:white;
+text-decoration:none;
+font-weight:500;
+margin-top:auto;  
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.readmore i{
+margin-left:8px;
+}
+
+@media(max-width:768px){
+
+.spotlight-title{
+font-size:38px;
+}
+
+.success-card{
+min-width:280px;
+}
+
+}
+.fintech-section{
+background:#1c0037;
+padding:120px 0;
+color:white;
+}
+
+.tag{
+color:#41e3a4;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.fintech-title{
+font-size:64px;
+font-weight:800;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.fintech-desc{
+color:#cfcfe7;
+max-width:420px;
+font-size:17px;
+}
+
+.stat-number{
+font-size:64px;
+font-weight:800;
+margin-bottom:5px;
+}
+
+.stat-label{
+color:#41e3a4;
+font-weight:600;
+}
+
+@media(max-width:768px){
+
+.fintech-title{
+font-size:42px;
+}
+
+.stat-number{
+font-size:40px;
+}
+
+}
+.footer-section{
+background:#2b0c4d;
+color:white;
+padding:70px 0 20px;
+}
+
+.footer-logo{
+width:140px;
+margin-bottom:15px;
+filter: brightness(0) invert(1);
+}
+
+.footer-about p{
+color:#cfcfe3;
+max-width:320px;
+}
+.footer-links h5{
+margin-bottom:15px;
+font-weight:700;
+}
+
+.footer-links ul{
+list-style:none;
+padding:0;
+}
+
+.footer-links ul li{
+margin-bottom:10px;
+}
+
+.footer-links ul li a{
+text-decoration:none;
+color:#cfcfe3;
+transition:0.3s;
+}
+
+.footer-links ul li a:hover{
+color:#66f5c4;
+}
+
+
+.social-icons{
+margin-top:15px;
+}
+
+.social-icons a{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:38px;
+height:38px;
+background:#3b1a6a;
+border-radius:50%;
+margin-right:8px;
+color:white;
+font-size:18px;
+transition:0.3s;
+}
+
+.social-icons a:hover{
+background:#66f5c4;
+color:#2b0c4d;
+}
+
+
+.footer-bottom{
+border-top:1px solid rgba(255,255,255,0.1);
+margin-top:40px;
+padding-top:20px;
+text-align:center;
+font-size:14px;
+color:#cfcfe3;
+}
