@@ -1,44 +1,169 @@
-body{
-font-family: "Segoe UI", sans-serif;
-background:#f5f7fb;
-overflow-x: hidden;
+:root {
+  --bg-1: #040816;
+  --bg-2: #091224;
+  --bg-3: #101a33;
+  --card: rgba(255, 255, 255, 0.08);
+  --card-strong: rgba(255, 255, 255, 0.14);
+  --text: #edf4ff;
+  --muted: #a7b5d4;
+  --line: rgba(255, 255, 255, 0.1);
+  --primary: #38bdf8;
+  --primary-2: #6366f1;
+  --accent: #a855f7;
+  --success: #22c55e;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  --radius: 24px;
 }
 
-.navbar{
-background:#4c1d95;
-padding:12px 20px;
+* {
+  box-sizing: border-box;
 }
 
-.navbar-brand img{
-height:35px;
-filter: brightness(0) invert(1);
+html, body {
+  overflow-x: hidden;
 }
 
-.nav-link{
-color:white ;
-font-weight:500;
-margin-right:10px;
-cursor: pointer;
-}
-.navbar .nav-link{
-color:white ;
-}
-
-.nav-link:hover{
-color:#e9d5ff ;
-}
-.navbar .dropdown-toggle.show{
-color:white;
-}
-.navbar .dropdown-toggle{
-color:white ;
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(168, 85, 247, 0.14), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.12), transparent 30%),
+    linear-gradient(135deg, var(--bg-1), var(--bg-2) 45%, var(--bg-3));
+  background-attachment: fixed;
+  padding-top: 86px;
+  position: relative;
 }
 
-.profile-icon{
-font-size:22px;
-color:white;
-cursor:pointer;
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: -1;
 }
+
+body::before {
+  top: -120px;
+  left: -120px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.25), transparent 70%);
+  animation: moveBlobOne 12s ease-in-out infinite alternate;
+}
+
+body::after {
+  bottom: -140px;
+  right: -120px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.22), transparent 70%);
+  animation: moveBlobTwo 14s ease-in-out infinite alternate;
+}
+
+@keyframes moveBlobOne {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(160px, 120px) scale(1.15); }
+}
+
+@keyframes moveBlobTwo {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-180px, -120px) scale(1.12); }
+}
+
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.22), transparent 68%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+  opacity: 0.9;
+}
+
+.glass-nav {
+  background: rgba(5, 8, 22, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  padding: 12px 0;
+  transition: all 0.3s ease;
+}
+
+.glass-nav.nav-scrolled {
+  background: rgba(5, 8, 22, 0.86);
+  padding: 8px 0;
+}
+
+.brand-logo img {
+  height: 38px;
+  filter: brightness(0) invert(1);
+}
+
+.nav-link {
+  color: #d8e6ff;
+  font-weight: 500;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  transition: 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  background: rgba(5, 8, 22, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: var(--shadow);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.dropdown-item {
+  color: #d8e6ff;
+  transition: 0.25s;
+  padding: 10px 16px;
+}
+
+.dropdown-item:hover {
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.16), rgba(99, 102, 241, 0.16));
+  color: white;
+}
+
+.profile-icon {
+  font-size: 22px;
+  color: white;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
 
 .login-btn{
 background:white;
@@ -73,6 +198,7 @@ margin:auto;
 .contact-header{
 text-align:center;
 margin-bottom:50px;
+color: #1046c5;
 }
 
 .contact-header h2{
@@ -83,7 +209,9 @@ margin-bottom:10px;
 .contact-header p{
 color:#666;
 }
-
+.info-card p,h4{
+  color: #1046c5;
+}
 .contact-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
