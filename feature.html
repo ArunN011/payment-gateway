@@ -175,156 +175,318 @@
       </div>
     </section>
 
-    <section class="features-section" id="features">
-      <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-tag">Features</span>
-          <h2 class="features-heading">
-            Powerful solutions engineered <br>
-            for global payments
-          </h2>
-          <p class="section-text">
-            Everything below is kept from your original page, only styled and animated better.
+    <section class="industries-section">
+  <div class="container">
+
+    <div class="section-header text-center">
+      <span class="section-tag">
+        <i class="bi bi-grid-3x3-gap-fill"></i>
+        Industries We Serve
+      </span>
+
+      <h2>
+        Payment Solutions For
+        <span>Every Business Model</span>
+      </h2>
+
+      <p>
+        Whether you're running an online store, SaaS platform,
+        educational institution, travel agency, or subscription service,
+        our payment infrastructure scales with your business.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="bi bi-bag-check-fill"></i>
+          </div>
+
+          <h4>E-Commerce</h4>
+
+          <p>
+            Accept payments from customers worldwide with support
+            for cards, UPI, wallets and net banking.
           </p>
+
+          <ul>
+            <li>Instant Checkout</li>
+            <li>Abandoned Cart Recovery</li>
+            <li>One Click Payments</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="bi bi-laptop-fill"></i>
+          </div>
+
+          <h4>SaaS Platforms</h4>
+
+          <p>
+            Manage recurring subscriptions, invoices and automated billing.
+          </p>
+
+          <ul>
+            <li>Recurring Billing</li>
+            <li>Usage Based Pricing</li>
+            <li>Subscription Analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+
+          <h4>Education</h4>
+
+          <p>
+            Collect tuition fees, course payments and recurring student plans.
+          </p>
+
+          <ul>
+            <li>Fee Collection</li>
+            <li>Student Portals</li>
+            <li>Auto Reminders</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="bi bi-airplane-fill"></i>
+          </div>
+
+          <h4>Travel & Tourism</h4>
+
+          <p>
+            Enable seamless bookings with secure multi-currency payments.
+          </p>
+
+          <ul>
+            <li>Global Payments</li>
+            <li>Refund Processing</li>
+            <li>Currency Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="bi bi-shop-window"></i>
+          </div>
+
+          <h4>Retail Stores</h4>
+
+          <p>
+            Connect online and offline payments through a unified dashboard.
+          </p>
+
+          <ul>
+            <li>QR Payments</li>
+            <li>POS Integration</li>
+            <li>Sales Reports</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="bi bi-repeat"></i>
+          </div>
+
+          <h4>Subscriptions</h4>
+
+          <p>
+            Automate recurring payments and reduce payment failures.
+          </p>
+
+          <ul>
+            <li>Auto Renewal</li>
+            <li>Smart Retry</li>
+            <li>Customer Management</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <section class="developer-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-lg-6">
+        <span class="dev-badge">
+          <i class="bi bi-code-slash"></i>
+          Developer Friendly
+        </span>
+
+        <h2>
+          Integrate Payments
+          in Minutes
+        </h2>
+
+        <p>
+          Powerful APIs, SDKs and Webhooks built for modern businesses.
+          Start accepting payments quickly with minimal code.
+        </p>
+
+        <div class="dev-list">
+
+          <div>
+            <i class="bi bi-check-circle-fill"></i>
+            REST APIs
+          </div>
+
+          <div>
+            <i class="bi bi-check-circle-fill"></i>
+            Java SDK
+          </div>
+
+          <div>
+            <i class="bi bi-check-circle-fill"></i>
+            Spring Boot Ready
+          </div>
+
+          <div>
+            <i class="bi bi-check-circle-fill"></i>
+            Webhooks Support
+          </div>
+
+          <div>
+            <i class="bi bi-check-circle-fill"></i>
+            Sandbox Testing
+          </div>
+
         </div>
 
-        <div class="row g-4 g-lg-5 mt-2">
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-bag"></i>
-              </div>
-              <h5>Ecommerce Integrations</h5>
-              <p>Allows businesses to seamlessly connect their online store with other platforms and tools.</p>
+        <a href="error.html" class="btn dev-btn">
+          View Documentation
+        </a>
+
+      </div>
+
+      <div class="col-lg-6">
+        <div class="code-card">
+
+<pre>
+POST /api/payment/create
+
+{
+  "amount": 5000,
+  "currency": "INR",
+  "customer": "Arun"
+}
+
+Status: Success
+Transaction ID:
+TXN784512
+</pre>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+    <section class="adyen-section">
+  <div class="container">
+    <div class="row align-items-stretch g-4">
+
+      <div class="col-lg-7">
+        <div class="adyen-visual">
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+
+          <div class="stack stack-1"></div>
+          <div class="stack stack-2"></div>
+          <div class="stack stack-3"></div>
+
+          <div class="glow-dot dot-1"></div>
+          <div class="glow-dot dot-2"></div>
+          <div class="glow-dot dot-3"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="adyen-panel">
+          <div class="panel-top">
+            <span class="panel-kicker">INTELLIGENT MONEY MOVEMENT</span>
+            <h2>Move money across your entire business</h2>
+            <p>
+              Drive revenue with optimized payments and automated payouts.
+              Accept, settle, and move funds on one platform.
+            </p>
+            <a href="error.html" class="panel-link">
+              Explore Intelligent Money Movement <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="panel-tabs">
+            <button class="tab-btn active" data-target="tab1">
+              Accept payments
+              <i class="bi bi-arrow-right"></i>
+            </button>
+            <button class="tab-btn" data-target="tab2">
+              Send payouts globally
+              <i class="bi bi-arrow-right"></i>
+            </button>
+            <button class="tab-btn" data-target="tab3">
+              Launch under your brand
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="panel-content">
+            <div class="tab-pane active" id="tab1">
+              <h3>Accept payments</h3>
+              <p>
+                Collect UPI, cards, wallets, and net banking with a secure,
+                seamless checkout experience.
+              </p>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+              <h3>Send payouts globally</h3>
+              <p>
+                Automate vendor payouts, refunds, and settlements across
+                regions from a single dashboard.
+              </p>
+            </div>
+
+            <div class="tab-pane" id="tab3">
+              <h3>Launch under your brand</h3>
+              <p>
+                Embed payments, accounts, and card issuing into your own
+                product with a clean branded experience.
+              </p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-globe"></i>
-              </div>
-              <h5>Online Payments</h5>
-              <p>Using various payment methods such as credit cards, digital wallets, or bank transfers.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-credit-card"></i>
-              </div>
-              <h5>Automatic Transfers</h5>
-              <p>Automatically moved between accounts ensuring seamless and timely transactions.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-shield-check"></i>
-              </div>
-              <h5>Secure Transactions</h5>
-              <p>Protecting sensitive information through encryption and advanced security protocols.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-phone"></i>
-              </div>
-              <h5>Mobile Support</h5>
-              <p>Enabling secure transactions on the go with responsive mobile interfaces.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-arrow-repeat"></i>
-              </div>
-              <h5>Recurring Billing</h5>
-              <p>An automated payment process that allows businesses to charge customers regularly.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-currency-dollar"></i>
-              </div>
-              <h5>Multiple Payment</h5>
-              <p>Enhances checkout experience by supporting diverse payment options.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <i class="bi bi-check2-circle"></i>
-              </div>
-              <h5>Seamless Payment</h5>
-              <p>With no unnecessary redirects, it improves user experience and boosts satisfaction.</p>
-            </div>
+          <div class="mini-card">
+            <span>ADYEN FOR PLATFORMS</span>
+            <i class="bi bi-plus-lg"></i>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="payment-methods" id="methods">
-      <div class="container">
-        <div class="text-center mb-5 section-heading">
-          <span class="section-tag">Payment Methods</span>
-          <h2 class="methods-title">Supported Payment Methods</h2>
-          <p class="methods-subtitle">Accept payments through multiple secure and flexible options.</p>
-        </div>
-
-        <div class="row g-4 text-center justify-content-center">
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="method-box">
-              <img src="upi.webp" alt="UPI">
-              <p>UPI</p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="method-box">
-              <img src="visa.webp" alt="Visa">
-              <p>Visa</p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="method-box">
-              <img src="mastercard.webp" alt="Mastercard">
-              <p>Mastercard</p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="method-box">
-              <img src="paypol.webp" alt="PayPal">
-              <p>PayPal</p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="method-box">
-              <img src="wallet.webp" alt="Wallet">
-              <p>Wallet</p>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="method-box">
-              <img src="netbanking.webp" alt="Net Banking">
-              <p>Net Banking</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section class="why-stackly">
       <div class="container">
@@ -390,6 +552,437 @@
       </div>
     </section>
   </main>
+  <section class="faq-section py-5">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="faq-tag">FAQ</span>
+      <h2 class="faq-title">Frequently Asked Questions</h2>
+      <p class="faq-subtitle">
+        Everything you need to know about payments, settlements and security.
+      </p>
+    </div>
+
+    <div class="accordion custom-faq" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+            What is a Payment Gateway?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show"
+             data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            A payment gateway securely processes online payments and connects
+            customers, merchants, and banks to complete transactions safely. :contentReference[oaicite:0]{index=0}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+            Which payment methods do you support?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            We support UPI, Credit Cards, Debit Cards, Net Banking,
+            Wallets, and international payment options. :contentReference[oaicite:1]{index=1}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+            Are transactions secure?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes. All transactions are encrypted and protected using
+            industry-standard security protocols and fraud prevention systems. :contentReference[oaicite:2]{index=2}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq4">
+            How long does settlement take?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Settlement time depends on the payment method and merchant plan.
+            Most transactions are processed quickly, with settlements handled
+            according to your account schedule. :contentReference[oaicite:3]{index=3}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq5">
+            What happens if a payment fails?
+          </button>
+        </h2>
+        <div id="faq5" class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Failed transactions are automatically identified. Customers can
+            retry payments, and eligible failed payments are usually reversed
+            or refunded automatically. :contentReference[oaicite:4]{index=4}
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq6">
+            Can I accept international payments?
+          </button>
+        </h2>
+        <div id="faq6" class="accordion-collapse collapse"
+             data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes. International payment support allows businesses to collect
+            payments from customers worldwide through supported cards and
+            payment methods. :contentReference[oaicite:5]{index=5}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="analytics-section">
+  <div class="container">
+
+    <div class="analytics-heading text-center">
+      <span class="analytics-badge">
+        <i class="bi bi-graph-up-arrow"></i>
+        Real-Time Insights
+      </span>
+
+      <h2>
+        Live Payment
+        <span>Analytics Dashboard</span>
+      </h2>
+
+      <p>
+        Monitor transactions, revenue, settlements, refunds and payment
+        performance from a single intelligent dashboard.
+      </p>
+    </div>
+
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-5">
+
+        <div class="analytics-content">
+
+          <div class="feature-line">
+            <i class="bi bi-lightning-charge-fill"></i>
+            <div>
+              <h5>Instant Transaction Monitoring</h5>
+              <p>Track every payment event in real time.</p>
+            </div>
+          </div>
+
+          <div class="feature-line">
+            <i class="bi bi-bar-chart-fill"></i>
+            <div>
+              <h5>Revenue Intelligence</h5>
+              <p>Visualize business growth with live reports.</p>
+            </div>
+          </div>
+
+          <div class="feature-line">
+            <i class="bi bi-shield-check"></i>
+            <div>
+              <h5>Fraud Detection Alerts</h5>
+              <p>AI powered monitoring for suspicious activity.</p>
+            </div>
+          </div>
+
+          <div class="feature-line">
+            <i class="bi bi-globe2"></i>
+            <div>
+              <h5>Global Performance Metrics</h5>
+              <p>Analyze payments across multiple countries.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-lg-7">
+
+        <div class="dashboard-card">
+
+          <div class="dashboard-top">
+
+            <div>
+              <h5>Payments Overview</h5>
+              <small>Updated just now</small>
+            </div>
+
+            <span class="live-indicator">
+              <span></span>
+              Live
+            </span>
+
+          </div>
+
+          <div class="stats-grid">
+
+            <div class="stat-card">
+              <h3>₹12.8M</h3>
+              <p>Total Volume</p>
+              <span class="positive">+24.6%</span>
+            </div>
+
+            <div class="stat-card">
+              <h3>98.9%</h3>
+              <p>Success Rate</p>
+              <span class="positive">Excellent</span>
+            </div>
+
+            <div class="stat-card">
+              <h3>12,845</h3>
+              <p>Transactions</p>
+              <span class="positive">+1,250 Today</span>
+            </div>
+
+            <div class="stat-card">
+              <h3>₹6.4L</h3>
+              <p>Settlement</p>
+              <span class="positive">Completed</span>
+            </div>
+
+          </div>
+
+          <div class="chart-area">
+
+            <div class="chart-bars">
+
+              <div class="bar" style="height:55%">
+                <span>Mon</span>
+              </div>
+
+              <div class="bar" style="height:70%">
+                <span>Tue</span>
+              </div>
+
+              <div class="bar" style="height:60%">
+                <span>Wed</span>
+              </div>
+
+              <div class="bar" style="height:85%">
+                <span>Thu</span>
+              </div>
+
+              <div class="bar active" style="height:100%">
+                <span>Fri</span>
+              </div>
+
+              <div class="bar" style="height:75%">
+                <span>Sat</span>
+              </div>
+
+              <div class="bar" style="height:90%">
+                <span>Sun</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="recent-transactions">
+
+            <div class="transaction-item">
+              <div>
+                <strong>Netflix Subscription</strong>
+                <small>Visa Card</small>
+              </div>
+              <span class="success">+ ₹799</span>
+            </div>
+
+            <div class="transaction-item">
+              <div>
+                <strong>Amazon Purchase</strong>
+                <small>UPI Payment</small>
+              </div>
+              <span class="success">+ ₹2,499</span>
+            </div>
+
+            <div class="transaction-item">
+              <div>
+                <strong>Spotify Premium</strong>
+                <small>Auto Debit</small>
+              </div>
+              <span class="success">+ ₹119</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<section class="chat-testimonial-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <div class="col-lg-5">
+        <div class="chat-testimonial-copy">
+          <span class="chat-badge">Client Conversations</span>
+          <h2>Real feedback, in a real chat feel</h2>
+          <p>
+            See what merchants and business owners say about our payment gateway
+            in a chat-style testimonial layout that feels modern, human, and SaaS-ready.
+          </p>
+
+          <div class="chat-stats">
+            <div class="stat-box">
+              <h4>4.9/5</h4>
+              <span>Customer rating</span>
+            </div>
+            <div class="stat-box">
+              <h4>10k+</h4>
+              <span>Happy businesses</span>
+            </div>
+            <div class="stat-box">
+              <h4>24/7</h4>
+              <span>Support active</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-7">
+        <div class="chat-window">
+
+          <div class="chat-header">
+            <div class="chat-avatar-group">
+              <div class="mini-avatar">A</div>
+              <div class="mini-avatar">S</div>
+              <div class="mini-avatar">K</div>
+            </div>
+
+            <div class="chat-title">
+              <h5>Customer Success</h5>
+              <p><span class="online-dot"></span> Live conversations</p>
+            </div>
+
+            <div class="chat-menu">
+              <i class="bi bi-three-dots-vertical"></i>
+            </div>
+          </div>
+
+          <div class="chat-body">
+
+            <div class="chat-day">Today</div>
+
+            <div class="chat-message incoming">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+              <div class="bubble">
+                <p>
+                  “Integration was super smooth. We started collecting UPI and card payments
+                  in less than a day.”
+                </p>
+                <span>9:12 AM</span>
+              </div>
+            </div>
+
+            <div class="chat-message outgoing">
+              <div class="bubble">
+                <p>
+                  “That’s exactly what we wanted — fast setup and a dashboard that actually
+                  feels built for operations.”
+                </p>
+                <span>9:13 AM</span>
+              </div>
+            </div>
+
+            <div class="chat-message incoming">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+              <div class="bubble">
+                <p>
+                  “Settlement tracking is clean and the alerts are amazing. It feels like
+                  a proper SaaS product, not just a payment tool.”
+                </p>
+                <span>9:18 AM</span>
+              </div>
+            </div>
+
+            <div class="chat-message outgoing">
+              <div class="bubble">
+                <p>
+                  “We built trust with our customers because the checkout experience is fast,
+                  secure, and branded beautifully.”
+                </p>
+                <span>9:19 AM</span>
+              </div>
+            </div>
+
+            <div class="chat-message incoming">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User">
+              <div class="bubble highlight">
+                <p>
+                  “Support replies were quick. The platform feels enterprise-grade and
+                  works perfectly on mobile too.”
+                </p>
+                <span>9:25 AM</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="chat-footer">
+            <div class="typing">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p>New testimonial messages are arriving</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <footer class="footer">
     <div class="container">
