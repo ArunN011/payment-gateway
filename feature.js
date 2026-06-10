@@ -21,27 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from(".hero-badge, .hero-title, .hero-text, .hero-actions, .hero-mini", {
-    opacity: 0,
-    y: 35,
-    duration: 0.9,
-    stagger: 0.12,
-    ease: "power3.out"
-  });
 
  
 
-  gsap.from(".feature-box", {
-    scrollTrigger: {
-      trigger: ".features-section",
-      start: "top 72%"
-    },
-    opacity: 0,
-    y: 50,
-    duration: 0.8,
-    stagger: 0.08,
-    ease: "power3.out"
-  });
+
 
   
 
@@ -57,3 +40,20 @@ document.addEventListener("DOMContentLoaded", () => {
     ease: "power3.out"
   });
 });
+
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabPanes = document.querySelectorAll(".tab-pane");
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabButtons.forEach(b => b.classList.remove("active"));
+      tabPanes.forEach(p => p.classList.remove("active"));
+
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.target).classList.add("active");
+    });
+  });
+const bubbles = document.querySelectorAll(".chat-message");
+  bubbles.forEach((item, index) => {
+    item.style.animationDelay = `${index * 0.12}s`;
+  });
