@@ -167,6 +167,7 @@ body::after {
 .hero-section {
   padding: 92px 0 80px;
   position: relative;
+  margin-top: -86px;
 }
 
 .hero-badge,
@@ -283,6 +284,7 @@ body::after {
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   box-shadow: var(--shadow);
+  margin-top: -150px;
 }
 
 .dashboard-card {
